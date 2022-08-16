@@ -17,9 +17,9 @@ public class App {
         tree.addLink(person1, person4, PARENT, CHILD);
         tree.addLink(person2, person4, PARENT, CHILD);
 
-        //person1.printChild(tree);
-        person3.printParents(tree);
-        person4.printSister(tree);
+        //(new Research()).printChild(person2.getName(), tree);
+        (new Research()).printParents(person3.getName(), tree);
+        (new Research()).printSister(person4.getName(), tree);
 
         //person1.printInfo();
         //person2.printInfo();
