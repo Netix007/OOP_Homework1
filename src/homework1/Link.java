@@ -24,8 +24,8 @@ public class Link {
         return link;
     }
 
-    @java.lang.Override
-    public java.lang.String toString() {
+    @Override
+    public String toString() {
         return "Link{" +
                 "personFirst=" + personFirst +
                 ", personSecond=" + personSecond +
