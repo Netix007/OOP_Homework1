@@ -6,6 +6,7 @@ public abstract class Person /*implements Researchable*/ {
 
     private String name;
     private String surname;
+    private int age;
 
     public String getName() {
         return name;
@@ -15,9 +16,14 @@ public abstract class Person /*implements Researchable*/ {
         return surname;
     }
 
-    public Person(String name, String surname) {
+    public int getAge() {
+        return age;
+    }
+
+    public Person(String name, String surname, int age) {
         this.name = name;
         this.surname = surname;
+        this.age = age;
     }
     public abstract void printInfo();
 
@@ -26,6 +32,7 @@ public abstract class Person /*implements Researchable*/ {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
+                ", age='" + age + '\'' +
                 '}';
     }
 }
