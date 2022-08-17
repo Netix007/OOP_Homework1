@@ -2,6 +2,8 @@ package homework1;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Iterator;
+
 
 public class Tree {
 
@@ -18,4 +20,10 @@ public class Tree {
         return links;
     }
 
+    public void printAllLinks() {
+        Iterator iter = links.iterator();
+        while (iter.hasNext()) {
+            System.out.println(iter.next());
+        }
+    }
 }
